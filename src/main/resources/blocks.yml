@@ -1,0 +1,18 @@
+Blocks:
+  Exp-With-Creative-Gm: false
+  # PreMade
+  '1':
+    materials:
+      - DIAMOND_ORE
+      - IRON_ORE
+    exp:
+      min: 20
+      max: 30
+
+  '2':
+    materials:
+      - GOLD_ORE
+      - REDSTONE_ORE
+    exp:
+      min: 20
+      max: 30

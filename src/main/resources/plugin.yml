@@ -1,0 +1,9 @@
+name: Leveller
+version: '${project.version}'
+main: pk.panther.leveller.Main
+api-version: 1.16
+authors: [ Panther_PK ]
+depend:
+  - AlonsoLevels
+libraries:
+  - org.projectlombok:lombok:1.18.28

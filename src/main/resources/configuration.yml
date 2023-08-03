@@ -1,0 +1,27 @@
+Chat-Prefix: '&e&lLEVELLER &8| &7'
+
+# Example Actions:
+# Action Bar: [actionbar] &7<your-text>
+# Title and Subtitle: [title] &7<Your-Title>;&d<Your-Subtitle>
+# Player Command: [player] <command>
+# Console Command: [console] <command>
+# Sound to Player: [sound] <Sound-Type> <volume> <pitch>
+# Message List: [message-list] <list_name> {List from actions-mess-lists}
+
+actions:
+  player_vs_player_kill_victim:
+    - '[message] {KILLER} killed you and gain {EXP}xp'
+  player_vs_player_kill_killer:
+    - '[message] You killed {VICTIM} and got {EXP}xp for that'
+  killed_mob_and_got_exp:
+    - '[message] You killed {MOB} and got {EXP}xp'
+  block_break_and_got_exp:
+    - '[message] You breaked {BLOCK} and got {EXP}xp'
+actions-mess-lists: # actions-mess-lists: [] to turn off
+  example:
+    - 'example text'
+
+PlayerVsPlayer:
+  enabled: true
+  exp: '10;20' # min;max
+  # Loser gaining -exp, same amount as winner got, if Loser doesnt have any more exp, then nothing is changing
